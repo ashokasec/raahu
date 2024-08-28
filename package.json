@@ -1,0 +1,16 @@
+{
+  "name": "getmeta",
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "cheerio": "^1.0.0",
+    "hono": "^4.5.9"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "wrangler": "^3.57.2"
+  }
+}
