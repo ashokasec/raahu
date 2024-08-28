@@ -2,6 +2,11 @@
 
 Raahu is a tool for extracting metadata from web pages. It retrieves key details like the title, description, image, and canonical URL.
 
+## Motivation
+Raahu was developed to address a specific requirement for a friend's SaaS project. I needed to create a "Readings" section where users can share their best readings or highlight noteworthy content they have encountered. Initially, the plan was for users to input the link, title, and description manually. However, I wanted to simplify the process by allowing users to provide just a URL. Raahu would then automatically fetch the title, description, and thumbnail from the web.
+
+The challenge with client-side scraping is that browsers block such requests due to CORS (Cross-Origin Resource Sharing) policies. To overcome this, I moved the scraping process to the server side. Now, I don't have to fear about CORS Errors.
+
 ## Features
 - **Title Extraction**: Fetch the page title.
 - **Description Extraction**: Retrieve the meta description or Open Graph description.
