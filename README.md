@@ -30,7 +30,7 @@ The challenge with client-side scraping is that browsers block such requests due
 ## Limitation
 
 #### **Problem**
-As Raahu is hosted on a serverless architecture, it shares the same IP with other instances. This can result in rate limiting or high traffic errors on some websites, such as YouTube.
+As Raahu is hosted on a EDGE runtime. This can result in rate limiting or high traffic errors on some websites, such as YouTube.
 
 #### **Solution**
 The IP used by Raahu may be flagged if other users have generated high traffic from the same IP, leading to restrictions or errors. To avoid this issue, consider hosting Raahu on your own serverful VPS where the IP is unique and not shared.
